@@ -1,0 +1,25 @@
+easy_admin:
+    entities:
+        Galeria:
+            class: AppBundle\Entity\Galeria
+            list:
+                fields:
+                    - name
+                    - { property: 'photo1', type: 'image', base_path: '%app.path.galery_photos%' }
+                    - { property: 'photo2', type: 'image', base_path: '%app.path.galery_photos%' }
+                    - { property: 'photo3', type: 'image', base_path: '%app.path.galery_photos%' }
+                    - { property: 'photo4', type: 'image', base_path: '%app.path.galery_photos%' }
+            show:
+                fields:
+                    - name
+                    - { property: 'photo1', type: 'image', base_path: '%app.path.galery_photos%' }
+                    - { property: 'photo2', type: 'image', base_path: '%app.path.galery_photos%' }
+                    - { property: 'photo3', type: 'image', base_path: '%app.path.galery_photos%' }
+                    - { property: 'photo4', type: 'image', base_path: '%app.path.galery_photos%' }
+            form:
+                fields:
+                    - name
+                    - { property: 'photo1File', type: 'vich_image' }
+                    - { property: 'photo2File', type: 'vich_image' }
+                    - { property: 'photo3File', type: 'vich_image' }
+                    - { property: 'photo4File', type: 'vich_image' }
